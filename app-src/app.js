@@ -1,14 +1,14 @@
 import angular from 'angular';
 import 'angular-animate';
-import 'angular-growl';
 import 'angular-route';
-
+import 'angular-growl';
 /*
  due to issue (https://github.com/systemjs/builder/issues/12)
  it is not possible to dynamically import css when bundling the app with
- jspm bundle-sfx lib/app --minify
+ jspm bundle-sfx app-src/app --minify
  As a workaround you'd have to include CSS files directly into index.html
  */
+
 import 'bootstrap/css/bootstrap.css!';
 import './todo/todo.css!';
 

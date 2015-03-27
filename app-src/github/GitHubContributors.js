@@ -1,7 +1,9 @@
+import githubContributorsTemplate from './github_contributors.html.tmpl!text';
+
 class GitHubContributors {
 
   constructor() {
-    this.templateUrl='./lib/github/github_contributors.html';
+    this.template= githubContributorsTemplate;
     this.scope = {};
     this.controller = 'GitHubCtrl';
     this.controllerAs = 'ghc';

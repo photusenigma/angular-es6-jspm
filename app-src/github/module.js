@@ -5,6 +5,7 @@ import { GitHubCtrl } from './GitHubCtrl';
 import { GitHubContributors } from './GitHubContributors';
 import { GitHubProvider } from './GitHubProvider';
 
+import githubTemplate from './github.html.tmpl!text';
 
 let gitHubModule = angular.module('gitHubModule', [])
   .factory('GitHubService', GitHubService.gitHubFactory)
@@ -17,6 +18,6 @@ gitHubModule.config(GitHubProvider => {
 });
 
 
-gitHubModule.routeInfo = { templateUrl: 'lib/github/github.html' };
+gitHubModule.routeInfo = { template: githubTemplate };
 
 export { gitHubModule };
